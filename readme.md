@@ -43,7 +43,7 @@ mkdir /minecraft/
 mkdir /minecraft/data
 
 docker rm --force minecraft
-docker run -d -v /minecraft/data:/data --restart always     -e TYPE=SPIGOT  -e VERSION=1.19.3 -p 25565:25565     -e EULA=TRUE --name minecraft itzg/minecraft-server
+docker run -d -v /minecraft/data:/data --restart always     -e TYPE=SPIGOT  -e VERSION=1.19.3 -p 25565:25565     -e EULA=TRUE --name minecraft itzg/minecraft-server:java8-multiarch
 
 ```
 
