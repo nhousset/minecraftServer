@@ -65,4 +65,7 @@ docker exec -it minecraft rcon-cli
 
 
 https://johackim.com/installer-un-serveur-minecraft-avec-docker
+  
+https://www.snel.com/support/debian-vm-in-proxmox-and-networking-setup/
+  
 
