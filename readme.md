@@ -21,6 +21,20 @@ systemctl status docker | grep -i status
 mkdir /minecraft/
 mkdir /minecraft/data
 
-#docker run -d -v /minecraft/data:/data     -e TYPE=SPIGOT  -e VERSION=1.12.2 -p 25565:25565     -e EULA=TRUE --name minecraft itzg/minecraft-server
-docker run -d -it -e EULA=TRUE -p 19132:19132/udp -v /minecraft/data:/data itzg/minecraft-bedrock-server
+docker rm --force 
+docker run -d -v /minecraft/data:/data     -e TYPE=SPIGOT  -e VERSION=1.19.3 -p 25565:25565     -e EULA=TRUE --name minecraft itzg/minecraft-server
+
 ```
+
+Plugin Cross-plateform
+
+https://wiki.geysermc.org/geyser/setup/
+
+
+```
+docker exec -it minecraft rcon-cli
+```
+
+
+https://johackim.com/installer-un-serveur-minecraft-avec-docker
+
